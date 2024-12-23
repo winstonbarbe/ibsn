@@ -3,6 +3,7 @@ require_relative 'isbn.rb'
 # # Tests
 
 # # Test 1
+
 puts "TEST 1: Validate valid ISBN number"
 if isbn_verify?("3-598-21508-8") == true
   puts "TEST #1 passed"
@@ -11,40 +12,40 @@ else
 end
 
 # # Test 2
-# puts
-# puts "TEST 2: Invalidate number that does not divide evenly by 11"
-# if isbn_verify?("3-598-21508-9") == false
-#   puts "TEST #2 passed"
-# else
-#   puts "TEST #2 failed"
-# end
+puts
+puts "TEST 2: Invalidate number that does not divide evenly by 11"
+if isbn_verify?("3-598-21508-9") == false
+  puts "TEST #2 passed"
+else
+  puts "TEST #2 failed"
+end
 
 # # Test 3
-# puts
-# puts "TEST 3: Validate valid ISBN number that has a final 'digit' of X"
-# if isbn_verify?("3-598-21507-X") == true
-#   puts "TEST #3 passed"
-# else
-#   puts "TEST #3 failed"
-# end
+puts
+puts "TEST 3: Validate valid ISBN number that has a final 'digit' of X"
+if isbn_verify?("3-598-21507-X") == true
+  puts "TEST #3 passed"
+else
+  puts "TEST #3 failed"
+end
 
 # # Test 4
-# puts
-# puts "TEST 4: Invalidate number that ends with a letter other than X"
-# if isbn_verify?("3-598-21507-A") == false
-#   puts "TEST #4 passed"
-# else
-#   puts "TEST #4 failed"
-# end
+puts
+puts "TEST 4: Invalidate number that ends with a letter other than X"
+if isbn_verify?("3-598-21507-A") == false
+  puts "TEST #4 passed"
+else
+  puts "TEST #4 failed"
+end
 
 # # Test 5
-# puts
-# puts "TEST 5: Invalidate number that has a letter in the middle"
-# if isbn_verify?("3-598-P1581-X") == false
-#   puts "TEST #5 passed"
-# else
-#   puts "TEST #5 failed"
-# end
+puts
+puts "TEST 5: Invalidate number that has a letter in the middle"
+if isbn_verify?("3-598-P1581-X") == false
+  puts "TEST #5 passed"
+else
+  puts "TEST #5 failed"
+end
 
 # # Test 6
 # puts
