@@ -57,31 +57,31 @@ else
 end
 
 # # Test 7
-# puts
-# puts "TEST 7: Validate valid ISBN number even if dashes are not present"
-# if isbn_verify?("3598215088") == true
-#   puts "TEST #7 passed"
-# else
-#   puts "TEST #7 failed"
-# end
+puts
+puts "TEST 7: Validate valid ISBN number even if dashes are not present"
+if isbn_verify?("3598215088") == true
+  puts "TEST #7 passed"
+else
+  puts "TEST #7 failed"
+end
 
 # # Test 8
-# puts
-# puts "TEST 8: Validate valid ISBN number even if dashes are not present and ends with X"
-# if isbn_verify?("359821507X") == true
-#   puts "TEST #8 passed"
-# else
-#   puts "TEST #8 failed"
-# end
+puts
+puts "TEST 8: Validate valid ISBN number even if dashes are not present and ends with X"
+if isbn_verify?("359821507X") == true
+  puts "TEST #8 passed"
+else
+  puts "TEST #8 failed"
+end
 
 # # Test 9
-# puts
-# puts "TEST 9: Invalidate number that has more than 10 alphanumeric characters - even if the first 10 characters contain a valid ISBN"
-# if isbn_verify?("98245726788") == false
-#   puts "TEST #9 passed"
-# else
-#   puts "TEST #9 failed"
-# end
+puts
+puts "TEST 9: Invalidate number that has more than 10 alphanumeric characters - even if the first 10 characters contain a valid ISBN"
+if isbn_verify?("98245726788") == false
+  puts "TEST #9 passed"
+else
+  puts "TEST #9 failed"
+end
 
 # # Test 10
 # puts
