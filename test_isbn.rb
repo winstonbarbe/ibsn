@@ -48,13 +48,13 @@ else
 end
 
 # # Test 6
-# puts
-# puts "TEST 6: Invalidate number that has a letter in the middle even if it's an X"
-# if isbn_verify?("3-598-2X507-9") == false
-#   puts "TEST #6 passed"
-# else
-#   puts "TEST #6 failed"
-# end
+puts
+puts "TEST 6: Invalidate number that has a letter in the middle even if it's an X"
+if isbn_verify?("3-598-2X507-9") == false
+  puts "TEST #6 passed"
+else
+  puts "TEST #6 failed"
+end
 
 # # Test 7
 # puts
