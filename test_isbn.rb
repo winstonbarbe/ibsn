@@ -83,21 +83,21 @@ else
   puts "TEST #9 failed"
 end
 
-# # Test 10
-# puts
-# puts "TEST 10: Invalidate number that has more than 10 alphanumeric characters - even if the extra characters are letters in the middle"
-# if isbn_verify?("3-598P-21508-8") == false
-#   puts "TEST #10 passed"
-# else
-#   puts "TEST #10 failed"
-# end
+# Test 10
+puts
+puts "TEST 10: Invalidate number that has more than 10 alphanumeric characters - even if the extra characters are letters in the middle"
+if isbn_verify?("3-598P-21508-8") == false
+  puts "TEST #10 passed"
+else
+  puts "TEST #10 failed"
+end
 
-# # Test 11
-# puts
-# puts "TEST 11: Invalidate number that has fewer than 10 alphanumeric characters"
-# if isbn_verify?("134456729") == false
-#   puts "TEST #11 passed"
-# else
-#   puts "TEST #11 failed"
-# end
+# Test 11
+puts
+puts "TEST 11: Invalidate number that has fewer than 10 alphanumeric characters"
+if isbn_verify?("134456729") == false
+  puts "TEST #11 passed"
+else
+  puts "TEST #11 failed"
+end
 
